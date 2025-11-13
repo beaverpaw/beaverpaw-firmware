@@ -77,7 +77,7 @@ Perfect for: Home automation, garden irrigation, pet feeders, art installations,
 6. Done!
 
 **Android Users (Bluetooth Method):**
-1. Go to: app.beaverpaw.com/setup (in Chrome browser)
+1. Go to: [https://beaverpaw.com/mobiledevicesetup](https://beaverpaw.com/mobiledevicesetup) (in Chrome browser)
 2. Tap "Scan for Devices"
 3. Select your device
 4. Enter WiFi password
@@ -85,7 +85,7 @@ Perfect for: Home automation, garden irrigation, pet feeders, art installations,
 
 ### 4. Claim Your Device (1 minute)
 
-- Log into your BeaverPaw account
+- Log into your BeaverPaw account at [https://beaverpaw.com](https://beaverpaw.com)
 - Go to: Dashboard → Devices → Claim Device
 - Scan the QR code on your device (or enter Device ID from serial monitor)
 - Give it a friendly name
@@ -154,7 +154,7 @@ Motor coils →  A4988 outputs (1A, 1B, 2A, 2B)
 
 Once your device is online, you can control it from:
 
-- 🌐 **Web Dashboard** - app.beaverpaw.com
+- 🌐 **Web Dashboard** - [https://beaverpaw.com](https://beaverpaw.com)
 - 📱 **Mobile Browser** - Works on any phone
 - 🗣️ **Voice** - "Alexa, turn on living room light"
 - 🔗 **API** - Integrate with your own apps
