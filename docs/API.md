@@ -191,7 +191,7 @@ Want to control your device from your own code? Here's how:
 **Get Device Status:**
 ```bash
 curl -H "Authorization: Bearer YOUR_API_KEY" \
-  https://your-app.base44.app/api/devices/YOUR-DEVICE-ID
+  https://beaverpaw.com/api/devices/YOUR-DEVICE-ID
 ```
 
 **Send Command:**
@@ -200,7 +200,7 @@ curl -X POST \
   -H "Authorization: Bearer YOUR_API_KEY" \
   -H "Content-Type: application/json" \
   -d '{"command":"set_pin","pin":2,"value":1}' \
-  https://your-app.base44.app/api/devices/YOUR-DEVICE-ID/commands
+  https://beaverpaw.com/api/devices/YOUR-DEVICE-ID/commands
 ```
 
 ### Using Python
@@ -210,7 +210,7 @@ import requests
 
 # Turn LED on
 response = requests.post(
-    'https://your-app.base44.app/api/devices/ESP32-ABC123/commands',
+    'https://beaverpaw.com/api/devices/ESP32-ABC123/commands',
     headers={'Authorization': 'Bearer YOUR_API_KEY'},
     json={'command': 'set_pin', 'pin': 2, 'value': 1}
 )
@@ -225,7 +225,7 @@ const axios = require('axios');
 
 // Set RGB color to purple
 await axios.post(
-  'https://your-app.base44.app/api/devices/ESP32-ABC123/commands',
+  'https://beaverpaw.com/api/devices/ESP32-ABC123/commands',
   {
     command: 'set_rgb',
     r: 128,
