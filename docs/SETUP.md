@@ -216,7 +216,7 @@ Your device needs WiFi to connect to the cloud. Choose the method that works for
 ### Method 2: Bluetooth (Android/Chrome Users)
 
 1. Open Chrome browser on your Android phone
-2. Go to: **app.beaverpaw.com/setup**
+2. Go to: **[https://beaverpaw.com/mobiledevicesetup](https://beaverpaw.com/mobiledevicesetup)**
 3. Tap "Scan for Devices"
 4. Select your BeaverPaw device
 5. Enter WiFi name and password
@@ -229,7 +229,7 @@ Your device needs WiFi to connect to the cloud. Choose the method that works for
 This step links the device to your BeaverPaw account.
 
 1. **Log into BeaverPaw**
-   - Go to: app.beaverpaw.com
+   - Go to: [https://beaverpaw.com](https://beaverpaw.com)
    - Sign in with your account
 
 2. **Go to Claim Device**
@@ -293,11 +293,6 @@ Go to Dashboard → Devices → Click your device
 - Look for "Sign in to network" button
 - Tap it
 
-**Android users:**
-- Pull down notification shade
-- Look for "Network requires sign-in" notification
-- Tap it
-
 ### WiFi Connection Fails
 
 **Check these:**
@@ -354,22 +349,25 @@ Stuck? We're here to help!
   - We usually respond within 24 hours
   - Include your device ID and what's not working
 
-- **💬 Community Forum:** [GitHub Discussions](https://github.com/beaverpaw/beaverpaw-firmware/discussions)
+- **💬 Community Forum:** [GitHub Discussions](https://github.com/beaverpaw/beaverpaw-firmcussions)
   - Ask questions
   - Share your projects
   - Help others
 
 - **🐛 Found a Bug?** [Report it](https://github.com/beaverpaw/beaverpaw-firmware/issues)
 
-## Tips for Success
+## What's Next?
 
-✅ **Take your time** - rushing causes mistakes  
-✅ **Read error messages** - they usually tell you what's wrong  
-✅ **Try the simplest solution first** - usually it's something simple  
-✅ **Check connections twice** - loose wires are common  
-✅ **Use good power supply** - cheap power = weird problems  
-✅ **Ask for help** - we're friendly and want you to succeed!
+Now that your device is set up:
+
+1. **Explore the dashboard** - See what you can control
+2. **Set up alerts** - Get notified of motion, offline devices, etc.
+3. **Create automations** - Turn lights on at sunset, etc.
+4. **Share access** - Let family members control devices too
+5. **Connect voice assistants** - "Alexa, turn on porch light"
+
+**Most importantly:** Have fun and build something cool! 🚀
 
 ---
 
-Remember: Everyone gets stuck sometimes. Don't give up - the solution is usually simpler than you think! 🐕
+Questions? Don't hesitate to ask - there are no silly questions! 🐕
