@@ -62,7 +62,7 @@ ESP32-CAM doesn't have a USB port, so you need an adapter:
 - **Connect GPIO 0 to GND** (see wiring above)
 - Click Upload
 - When you see "Connecting......" in the console, **press the RESET button** on ESP32-CAM
-- Wait for "Done uploading" message
+- Wait for "Done uploading"
 - **Disconnect GPIO 0 from GND**
 - Press RESET button again to boot normally
 
@@ -76,12 +76,13 @@ ESP32-CAM doesn't have a USB port, so you need an adapter:
 5. Done!
 
 **Android Users:**
-- Can use Bluetooth method (same as ESP32 Generic)
+- Go to [https://beaverpaw.com/mobiledevicesetup](https://beaverpaw.com/mobiledevicesetup) in Chrome
+- Use Bluetooth method (same as ESP32 Generic)
 - Or use WiFi method above (both work!)
 
 ### 5. Claim Your Device
 
-- Login to BeaverPaw dashboard
+- Login to BeaverPaw at [https://beaverpaw.com](https://beaverpaw.com)
 - Claim Device → Scan QR code (or enter ID)
 - Device auto-configures and comes online!
 
