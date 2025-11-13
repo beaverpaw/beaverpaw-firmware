@@ -3,9 +3,10 @@
 // IMPORTANT: This is just an example! DO NOT use these values.
 // 
 // To get YOUR actual credentials:
-//   1. Go to your BeaverPaw dashboard
-//   2. Click "Claim Device" and scan your QR code
-//   3. Download your personalized config.h file
+//   1. Go to https://beaverpaw.com
+//   2. Login to your account
+//   3. Click "Claim Device" and scan your QR code
+//   4. Download your personalized config.h file
 //
 // Copy this file to config.h and fill in your actual values.
 
@@ -25,7 +26,7 @@
 // ==========================================
 // AWS IoT Credentials (from BeaverPaw dashboard)
 // ==========================================
-// Get these by claiming your device in the BeaverPaw dashboard.
+// Get these by claiming your device at https://beaverpaw.com
 // They're unique to YOUR device and should be kept secret!
 
 const char* AWS_IOT_ENDPOINT = "YOUR-ENDPOINT.iot.us-east-1.amazonaws.com";
@@ -55,7 +56,9 @@ const char* AWS_ROOT_CA = R"EOF(
 MIIDQTCCAimgAwIBAgITBmyfz5m/jAo54vB4ikPmljZbyjANBgkqhkiG9w0BAQsF
 ADA5MQswCQYDVQQGEwJVUzEPMA0GA1UEChMGQW1hem9uMRkwFwYDVQQDExBBbWF6
 b24gUm9vdCBDQSAxMB4XDTE1MDUyNjAwMDAwMFoXDTM4MDExNzAwMDAwMFowOTEL
-MAkGA1QQBhMCVVMxDzANBgNVBAoTBkFtYXpvbjEZMBcGA1UEAxMQQW1hem9uIFJv
+MAkG
+CVQQBhMCVVMxDzANBgNVBAoTBkF
+tYXpvbjEZMBcGA1UEAxMQQW1hem9uIFJv
 b3QgQ0EgMTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALJ4gHHKeNXj
 ca9HgFB0fW7Y14h29Jlo91ghYPl0hAEvrAIthtOgQ3pOsqTQNroBvo3bSMgHFzZM
 9O6II8c+6zf1tRn4SWiw3te5djgdYZ6k/oI2peVKVuRF4fn9tBb6dNqcmzU5L/qw
