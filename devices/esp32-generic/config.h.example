@@ -1,0 +1,86 @@
+// BeaverPaw Device Configuration Example
+// 
+// IMPORTANT: This is just an example! DO NOT use these values.
+// 
+// To get YOUR actual credentials:
+//   1. Go to your BeaverPaw dashboard
+//   2. Click "Claim Device" and scan your QR code
+//   3. Download your personalized config.h file
+//
+// Copy this file to config.h and fill in your actual values.
+
+#ifndef BEAVERPAW_CONFIG_H
+#define BEAVERPAW_CONFIG_H
+
+// ==========================================
+// WiFi Credentials (OPTIONAL)
+// ==========================================
+// You can set these here, OR configure via WiFi AP/Bluetooth setup.
+// Most users prefer WiFi AP setup (easier, works on iPhone).
+
+// Uncomment and fill these in if you want to hardcode WiFi:
+// #define WIFI_SSID "YourWiFiNetworkName"
+// #define WIFI_PASSWORD "YourWiFiPassword"
+
+// ==========================================
+// AWS IoT Credentials (from BeaverPaw dashboard)
+// ==========================================
+// Get these by claiming your device in the BeaverPaw dashboard.
+// They're unique to YOUR device and should be kept secret!
+
+const char* AWS_IOT_ENDPOINT = "YOUR-ENDPOINT.iot.us-east-1.amazonaws.com";
+
+// Device Certificate (PEM format)
+const char* DEVICE_CERT = R"EOF(
+-----BEGIN CERTIFICATE-----
+YOUR_CERTIFICATE_GOES_HERE
+This is a multi-line certificate that you'll get from the dashboard
+Replace this entire section with your actual certificate
+-----END CERTIFICATE-----
+)EOF";
+
+// Device Private Key (PEM format)
+// ⚠️  KEEP THIS SECRET - Never share or commit to Git!
+const char* DEVICE_PRIVATE_KEY = R"EOF(
+-----BEGIN RSA PRIVATE KEY-----
+YOUR_PRIVATE_KEY_GOES_HERE
+This is your device's secret key
+NEVER share this with anyone
+-----END RSA PRIVATE KEY-----
+)EOF";
+
+// Amazon Root CA 1 (you can use this as-is)
+const char* AWS_ROOT_CA = R"EOF(
+-----BEGIN CERTIFICATE-----
+MIIDQTCCAimgAwIBAgITBmyfz5m/jAo54vB4ikPmljZbyjANBgkqhkiG9w0BAQsF
+ADA5MQswCQYDVQQGEwJVUzEPMA0GA1UEChMGQW1hem9uMRkwFwYDVQQDExBBbWF6
+b24gUm9vdCBDQSAxMB4XDTE1MDUyNjAwMDAwMFoXDTM4MDExNzAwMDAwMFowOTEL
+MAkGA1QQBhMCVVMxDzANBgNVBAoTBkFtYXpvbjEZMBcGA1UEAxMQQW1hem9uIFJv
+b3QgQ0EgMTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALJ4gHHKeNXj
+ca9HgFB0fW7Y14h29Jlo91ghYPl0hAEvrAIthtOgQ3pOsqTQNroBvo3bSMgHFzZM
+9O6II8c+6zf1tRn4SWiw3te5djgdYZ6k/oI2peVKVuRF4fn9tBb6dNqcmzU5L/qw
+IFAGbHrQgLKm+a/sRxmPUDgH3KKHOVj4utWp+UhnMJbulHheb4mjUcAwhmahRWa6
+VOujw5H5SNz/0egwLX0tdHA114gk957EWW67c4cX8jJGKLhD+rcdqsq08p8kDi1L
+93FcXmn/6pUCyziKrlA4b9v7LWIbxcceVOF34GfID5yHI9Y/QCB/IIDEgEw+OyQm
+jgSubJrIqg0CAwEAAaNCMEAwDwYDVR0TAQH/BAUwAwEB/zAOBgNVHQ8BAf8EBAMC
+AYYwHQYDVR0OBBYEFIQYzIU07LwMlJQuCFmcx7IQTgoIMA0GCSqGSIb3DQEBCwUA
+A4IBAQCY8jdaQZChGsV2USggNiMOruYou6r4lK5IpDB/G/wkjUu0yKGX9rbxenDI
+U5PMCCjjmCXPI6T53iHTfIUJrU6adTrCC2qJeHZERxhlbI1Bjjt/msv0tadQ1wUs
+N+gDS63pYaACbvXy8MWy7Vu33PqUXHeeE6V/Uq2V8viTO96LXFvKWlJbYK8U90vv
+o/ufQJVtMVT8QtPHRh8jrdkPSHCa2XV4cdFyQzR1bldZwgJcJmApzyMZFo6IQ6XU
+5MsI+yMRQ+hDKXJioaldXgjUkK642M4UwtBV8ob2xJNDd2ZhwLnoQdeXeGADbkpy
+rqXRfboQnoZsG4q5WTP468SQvvG5
+-----END CERTIFICATE-----
+)EOF";
+
+#endif // BEAVERPAW_CONFIG_H
+
+// ==========================================
+// SECURITY NOTES
+// ==========================================
+//
+// This file should be added to .gitignore!
+// NEVER commit your actual credentials to Git.
+//
+// Your private key is like a password - keep it secret!
+//
