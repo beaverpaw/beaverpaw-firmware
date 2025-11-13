@@ -122,7 +122,7 @@ You might wonder: "Is it safe to send my WiFi password?"
 - ✅ Bluetooth Low Energy (BLE) connection
 - ✅ Short range (10 meters max)
 - ✅ Encrypted at BLE protocol level
-- ✅ Password never touches BeaverPaw servers
+- ✅ Not transmitted to BeaverPaw servers
 - ✅ Saved encrypted on device
 
 **Both methods are secure!** Your WiFi password never leaves your local network.
@@ -242,40 +242,6 @@ A: Only: email, claimed devices list, account creation date. That's it.
 **Q: Do you use analytics/tracking?**  
 A: Minimal. We track: logins, device claims, errors (to improve service). No advertising trackers.
 
-## For the Technically Curious
-
-### Certificate Chain
-
-```
-Amazon Root CA 1 (trusted by device)
-  └─> AWS IoT Regional CA
-      └─> Your Device Certificate (unique per device)
-```
-
-### TLS Handshake
-
-1. Device initiates connection to AWS IoT
-2. Device verifies AWS certificate against Root CA
-3. AWS requests client certificate
-4. Device presents its certificate
-5. AWS verifies certificate is registered and active
-6. AWS challenges device to prove it has private key
-7. Device signs challenge with private key
-8. AWS verifies signature matches certificate
-9. Both negotiate encryption keys
-10. Encrypted communication begins
-
-All this happens in <1 second!
-
-### Encryption Algorithms
-
-- **Key Exchange:** ECDHE (Elliptic Curve Diffie-Hellman)
-- **Authentication:** RSA 2048 or ECDSA
-- **Encryption:** AES-256-GCM
-- **Hash:** SHA-256
-
-These are the same algorithms used by banks, governments, and militaries.
-
 ## Security Roadmap
 
 **Coming soon:**
@@ -288,7 +254,7 @@ Want to help? Contribute on GitHub!
 
 ## Learn More
 
-- 📖 [AWS IoT Security](https://docs.aws.amazon.com/iot/latest/developerguide/security.html)
+- 📖 [AWS IoT Security](https://docs.aws.com/iot/latest/developerguide/security.html)
 - 📖 [TLS Explained](https://tls.ulfheim.net/)
 - 📖 [X.509 Certificates](https://www.ssl.com/faqs/what-is-an-x-509-certificate/)
 
